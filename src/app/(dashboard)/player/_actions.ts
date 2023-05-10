@@ -17,5 +17,8 @@ export async function updateItem(id: number, data: { title: string }) {
     data,
   });
 
+  revalidatePath(`/player`);
+  revalidatePath(`/player/all-items`);
+  revalidatePath(`/player/all-layout`);
   revalidatePath(`/player/${id}`);
 }
