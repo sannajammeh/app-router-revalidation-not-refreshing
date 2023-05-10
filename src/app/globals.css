@@ -25,3 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+button {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+button:hover {
+  @apply bg-blue-700;
+}
+
+a {
+  @apply text-blue-500 block;
+}
+
+a:hover {
+  @apply text-blue-700 underline;
+}
+
+input {
+  @apply border border-gray-600 rounded py-2 px-4 bg-gray-800;
+}
+
+input:focus {
+  @apply outline-none border-blue-500;
+}
